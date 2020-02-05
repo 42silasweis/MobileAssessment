@@ -35,6 +35,7 @@ public class WarpScript : MonoBehaviour
             timer = 0;
         }
     }
+    /*
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "RightWrap" && justWarped == false)
@@ -42,7 +43,7 @@ public class WarpScript : MonoBehaviour
             transform.position = area1To2Gate2.transform.position;
             justWarped = true;
             timer = 0;
-            Debug.Log("Yee");
+            //Debug.Log("Yee");
         }
 
         if (collision.gameObject.tag == "LeftWrap" && justWarped == false)
@@ -51,7 +52,7 @@ public class WarpScript : MonoBehaviour
             justWarped = true;
             timer = 0;
         }
-    }
+    }*/
     private void OnTriggerExit2D(Collider2D collision)
     {
         if(timer > delay)
