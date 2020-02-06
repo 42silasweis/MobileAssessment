@@ -48,4 +48,17 @@ public class PauseMenu : MonoBehaviour
     {
         Application.Quit();
     }
+    public void PauseGame()
+    {
+        if (Time.timeScale == 1)
+        {
+            GetComponent<Canvas>().enabled = true;
+            Time.timeScale = 0;
+        }
+        else
+        {
+            GetComponent<Canvas>().enabled = false;
+            Time.timeScale = 1;
+        }
+    }
 }
