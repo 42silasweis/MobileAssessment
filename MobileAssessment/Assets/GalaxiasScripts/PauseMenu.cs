@@ -39,7 +39,7 @@ public class PauseMenu : MonoBehaviour
         GetComponent<Canvas>().enabled = false;
         Time.timeScale = 1;
     }
-    public void restart()
+    public void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         Time.timeScale = 1;
