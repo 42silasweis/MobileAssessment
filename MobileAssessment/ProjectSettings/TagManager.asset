@@ -6,6 +6,15 @@ TagManager:
   tags:
   - LeftWrap
   - RightWrap
+  - PortalSliderBackground
+  - BossName
+  - PortalSliderFill
+  - PortalTimerSlider
+  - SliderFill
+  - Slider
+  - SliderBackground
+  - Enemy
+  - LevelEnd
   layers:
   - Default
   - TransparentFX

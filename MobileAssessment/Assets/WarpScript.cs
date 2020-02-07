@@ -7,7 +7,7 @@ public class WarpScript : MonoBehaviour
     public GameObject area1To2Gate1;
     public GameObject area1To2Gate2;
     public bool justWarped = false;
-    float delay = 1.1f;
+    float delay = 0.5f;
     float timer;
 
     void Start()
