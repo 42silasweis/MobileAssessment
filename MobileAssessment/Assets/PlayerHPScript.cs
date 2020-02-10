@@ -14,6 +14,7 @@ public class PlayerHPScript : MonoBehaviour
     public Text healthText;
     public Slider healthSlider;
     public Text liveText;
+    public int level = 1;
 
     private void Start()
     {
@@ -35,7 +36,15 @@ public class PlayerHPScript : MonoBehaviour
     {
         if(collision.gameObject.tag == "LevelEnd")
         {
-            SceneManager.LoadScene("Win");
+            if(level == 1)
+            {
+                SceneManager.LoadScene("Level2");
+            }
+            if(level == 2)
+            {
+                SceneManager.LoadScene("Win");
+            }
+            
         }
         if (collision.gameObject.tag == "Enemy")
         {
